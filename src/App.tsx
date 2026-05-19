@@ -14,12 +14,12 @@ const LETTER_TEXT = "Cayangkuu, just to let you knowww you are my favourite pers
 const YOUTUBE_VIDEO_ID = 'GQ9wrkFWbTs';
 
 const POLAROIDS = [
-  { img: '/template-assets/polaroid1.jpg', caption: 'First memory \u2728', tape: 'pink', rotate: -3, tapeStyle: { top: '-12px', left: '60px', transform: 'rotate(-8deg)' } },
-  { img: '/template-assets/polaroid2.jpg', caption: 'That perfect day \u2600\uFE0F', tape: 'mint', rotate: 4, tapeStyle: { top: '-14px', left: '30px', transform: 'rotate(5deg)' } },
-  { img: '/template-assets/polaroid3.png', caption: 'Us, always \u{1F49B}', tape: 'gold', rotate: -2, tapeStyle: { top: '-10px', right: '20px', transform: 'rotate(-12deg)' } },
-  { img: '/template-assets/polaroid4.jpeg', caption: 'The sunset \u{1F305}', tape: 'lavender', rotate: 5, tapeStyle: { top: '-13px', left: '50px', transform: 'rotate(9deg)' } },
-  { img: '/template-assets/polaroid5.jpeg', caption: 'Golden hour \u2728', tape: 'pink', rotate: -5, tapeStyle: { top: '-11px', left: '70px', transform: 'rotate(3deg)' } },
-  { img: '/template-assets/polaroid6.jpeg', caption: 'My favorite smile \u{1F970}', tape: 'mint', rotate: 2, tapeStyle: { top: '-14px', right: '40px', transform: 'rotate(-6deg)' } },
+  { img: './template-assets/polaroid1.jpg', caption: 'First memory \u2728', tape: 'pink', rotate: -3, tapeStyle: { top: '-12px', left: '60px', transform: 'rotate(-8deg)' } },
+  { img: './template-assets/polaroid2.jpg', caption: 'That perfect day \u2600\uFE0F', tape: 'mint', rotate: 4, tapeStyle: { top: '-14px', left: '30px', transform: 'rotate(5deg)' } },
+  { img: './template-assets/polaroid3.png', caption: 'Us, always \u{1F49B}', tape: 'gold', rotate: -2, tapeStyle: { top: '-10px', right: '20px', transform: 'rotate(-12deg)' } },
+  { img: './template-assets/polaroid4.jpeg', caption: 'The sunset \u{1F305}', tape: 'lavender', rotate: 5, tapeStyle: { top: '-13px', left: '50px', transform: 'rotate(9deg)' } },
+  { img: './template-assets/polaroid5.jpeg', caption: 'Golden hour \u2728', tape: 'pink', rotate: -5, tapeStyle: { top: '-11px', left: '70px', transform: 'rotate(3deg)' } },
+  { img: './template-assets/polaroid6.jpeg', caption: 'My favorite smile \u{1F970}', tape: 'mint', rotate: 2, tapeStyle: { top: '-14px', right: '40px', transform: 'rotate(-6deg)' } },
 ];
 
 function App() {
@@ -54,7 +54,7 @@ function App() {
     for (let i = 0; i < FLOWER_COUNT; i++) {
       const flowerEl = document.createElement('img');
       const randomFlower = FLOWER_ASSETS[Math.floor(Math.random() * FLOWER_ASSETS.length)];
-      flowerEl.src = `/template-assets/flowers/${randomFlower}`;
+      flowerEl.src = `./template-assets/flowers/${randomFlower}`;
       flowerEl.className = 'flower-particle';
 
       const size = Math.random() * 60 + 30;
@@ -498,10 +498,10 @@ function App() {
         <section id="scene-0" className={`scene ${currentScene === 0 ? 'active' : ''}`}>
           <div className="decor background-layer dotted-paper" />
           <div className="decor sticker float-smooth" style={{ top: '20%', left: '10%' }}>
-            <img src="/template-assets/heart.png" width="40" alt="decor" />
+            <img src="./template-assets/heart.png" width="40" alt="decor" />
           </div>
           <div className="decor sticker pulse-anim" style={{ bottom: '20%', right: '15%' }}>
-            <img src="/template-assets/stars.png" width="40" alt="decor" />
+            <img src="./template-assets/stars.png" width="40" alt="decor" />
           </div>
           
           <h2 className="scene-header interactive-object" style={{ top: 'auto', position: 'relative', fontSize: '3.5rem', padding: '0 20px', lineHeight: 1.3, textAlign: 'center', zIndex: 10 }}>
@@ -518,7 +518,7 @@ function App() {
           </h2>
 
           <div className="interactive-object float-slow" style={{ transitionDelay: '1.5s', marginTop: '10vh', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <img src="/template-assets/section2.gif" style={{ width: '200px', height: 'auto', filter: 'drop-shadow(2px 4px 10px rgba(0,0,0,0.2))' }} alt="Something for you" />
+            <img src="./template-assets/section2.gif" style={{ width: '200px', height: 'auto', filter: 'drop-shadow(2px 4px 10px rgba(0,0,0,0.2))' }} alt="Something for you" />
             <div style={{ fontFamily: 'var(--handwriting-font)', fontSize: '2rem', color: 'var(--color-deep-rose)', marginTop: '20px' }}>
               a rose mwahahha
             </div>
@@ -529,10 +529,10 @@ function App() {
         <section id="scene-0-6" className={`scene ${currentScene === 0.6 ? 'active' : ''}`} style={{ flexDirection: 'column' }}>
           <div className="decor background-layer checked-wallpaper" />
           <div className="decor sticker float-fast" style={{ top: '15%', right: '12%' }}>
-            <img src="/template-assets/heart.png" width="40" alt="decor" />
+            <img src="./template-assets/heart.png" width="40" alt="decor" />
           </div>
           <div className="decor sticker drift" style={{ bottom: '18%', left: '8%' }}>
-            <img src="/template-assets/pink-scribble.png" width="40" alt="decor" />
+            <img src="./template-assets/pink-scribble.png" width="40" alt="decor" />
           </div>
 
           <h2 className="scene-header interactive-object" style={{ top: '15%', position: 'absolute', fontSize: '2.5rem', padding: '0 20px', textAlign: 'center', zIndex: 10 }}>
@@ -540,7 +540,7 @@ function App() {
           </h2>
 
           <div className="interactive-object float-slow" style={{ transitionDelay: '1.5s', marginTop: '10vh', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <img src="/template-assets/section3.gif" style={{ width: '220px', height: 'auto', filter: 'drop-shadow(2px 4px 10px rgba(0,0,0,0.2))', borderRadius: '12px' }} alt="Kissy" />
+            <img src="./template-assets/section3.gif" style={{ width: '220px', height: 'auto', filter: 'drop-shadow(2px 4px 10px rgba(0,0,0,0.2))', borderRadius: '12px' }} alt="Kissy" />
           </div>
         </section>
 
@@ -548,10 +548,10 @@ function App() {
         <section id="scene-0-7" className={`scene ${currentScene === 0.7 ? 'active' : ''}`} style={{ flexDirection: 'column' }}>
           <div className="decor background-layer dotted-paper" />
           <div className="decor sticker rotate-slow" style={{ top: '20%', left: '10%' }}>
-            <img src="/template-assets/ribbon.png" width="40" alt="decor" />
+            <img src="./template-assets/ribbon.png" width="40" alt="decor" />
           </div>
           <div className="decor sticker float-smooth" style={{ bottom: '15%', right: '10%' }}>
-            <img src="/template-assets/stars.png" width="40" alt="decor" />
+            <img src="./template-assets/stars.png" width="40" alt="decor" />
           </div>
 
           {/* SIKE text - shown first, then fades out */}
@@ -573,7 +573,7 @@ function App() {
               className="float-slow"
             >
               <img
-                src="/template-assets/section4.png"
+                src="./template-assets/section4.png"
                 style={{ width: '220px', height: 'auto', filter: 'drop-shadow(2px 4px 10px rgba(0,0,0,0.2))', borderRadius: '12px', transition: 'transform 0.3s ease' }}
                 alt="Cat with bouquet"
               />
@@ -600,7 +600,7 @@ function App() {
             }}
           >
             <img
-              src="/template-assets/bouquet.png"
+              src="./template-assets/bouquet.png"
               style={{ maxWidth: '85vw', maxHeight: '65vh', objectFit: 'contain', filter: 'drop-shadow(0 8px 30px rgba(0,0,0,0.4))', animation: 'scaleIn 0.5s cubic-bezier(0.34,1.56,0.64,1) forwards, bouquetFloat 3s ease-in-out 0.5s infinite' }}
               alt="Full bouquet"
             />
@@ -618,24 +618,24 @@ function App() {
           <div className="decor background-layer gingham" />
 
           <div className="decor sticker float-slow pos-s1-1">
-            <img src="/template-assets/stars.png" width="40" alt="decor" />
+            <img src="./template-assets/stars.png" width="40" alt="decor" />
           </div>
           <div className="decor sticker float-fast pos-s1-2">
-            <img src="/template-assets/love-balloons.png" width="40" alt="decor" />
+            <img src="./template-assets/love-balloons.png" width="40" alt="decor" />
           </div>
           <div className="decor tape top-left" />
           <div className="decor tape bottom-right" />
           <div className="decor sticker drift pos-s1-3">
-            <img src="/template-assets/pink-scribble.png" width="40" alt="decor" />
+            <img src="./template-assets/pink-scribble.png" width="40" alt="decor" />
           </div>
           <div className="decor sticker rotate-slow pos-s1-4">
-            <img src="/template-assets/ribbon.png" width="40" alt="decor" />
+            <img src="./template-assets/ribbon.png" width="40" alt="decor" />
           </div>
           <div className="decor sticker float-slow pos-s1-5">
-            <img src="/template-assets/cat-scribble.png" width="40" alt="decor" />
+            <img src="./template-assets/cat-scribble.png" width="40" alt="decor" />
           </div>
           <div className="decor sticker float-fast pos-s1-6">
-            <img src="/template-assets/flowers.png" width="40" alt="decor" />
+            <img src="./template-assets/flowers.png" width="40" alt="decor" />
           </div>
 
           <div id="envelope-container" className="interactive-object float-slow">
@@ -647,7 +647,7 @@ function App() {
               <div className="envelope-flap" />
               <div className="wax-seal pulse-anim" id="wax-seal" ref={waxSealRef}>
                 <div className="seal-inner">
-                  <img src="/template-assets/heart.png" alt="heart" style={{ width: 22, height: 22, objectFit: 'contain' }} />
+                  <img src="./template-assets/heart.png" alt="heart" style={{ width: 22, height: 22, objectFit: 'contain' }} />
                 </div>
               </div>
             </div>
@@ -662,16 +662,16 @@ function App() {
           <div className="decor tape top-left pos-s2-1" />
           <div className="decor tape top-left pos-s2-2" style={{ top: '10%', right: '10%', left: 'auto', transform: 'rotate(25deg)' }} />
           <div className="decor sticker float-slow pos-s2-3">
-            <img src="/template-assets/flowers.png" width="40" alt="decor" />
+            <img src="./template-assets/flowers.png" width="40" alt="decor" />
           </div>
           <div className="decor sticker float-fast pos-s2-4">
-            <img src="/template-assets/stars.png" width="40" alt="decor" />
+            <img src="./template-assets/stars.png" width="40" alt="decor" />
           </div>
           <div className="decor sticker drift pos-s2-5">
-            <img src="/template-assets/pink-scribble.png" width="40" alt="decor" />
+            <img src="./template-assets/pink-scribble.png" width="40" alt="decor" />
           </div>
           <div className="decor sticker rotate-slow pos-s2-6">
-            <img src="/template-assets/heart.png" width="40" alt="decor" />
+            <img src="./template-assets/heart.png" width="40" alt="decor" />
           </div>
 
           <h2 className="scene-header interactive-object">A letter for you...</h2>
@@ -688,16 +688,16 @@ function App() {
           <div className="decor tape top-left pos-s3-1" />
           <div className="decor tape bottom-right pos-s3-2" style={{ bottom: '15%', left: '10%', right: 'auto', transform: 'rotate(-15deg)' }} />
           <div className="decor sticker float-smooth pos-s3-3">
-            <img src="/template-assets/heart.png" width="40" alt="decor" />
+            <img src="./template-assets/heart.png" width="40" alt="decor" />
           </div>
           <div className="decor sticker drift pos-s3-4">
-            <img src="/template-assets/pink-scribble.png" width="40" alt="decor" />
+            <img src="./template-assets/pink-scribble.png" width="40" alt="decor" />
           </div>
           <div className="decor sticker rotate-slow pos-s3-5">
-            <img src="/template-assets/ribbon.png" width="40" alt="decor" />
+            <img src="./template-assets/ribbon.png" width="40" alt="decor" />
           </div>
           <div className="decor sticker pulse-anim pos-s3-6">
-            <img src="/template-assets/stars.png" width="40" alt="decor" />
+            <img src="./template-assets/stars.png" width="40" alt="decor" />
           </div>
 
           <h2 className="scene-header interactive-object">Our Memories</h2>
@@ -721,19 +721,19 @@ function App() {
 
           <div className="decor tape bottom-right pos-s4-1" />
           <div className="decor sticker float-fast pos-s4-2">
-            <img src="/template-assets/guitar.png" width="40" alt="decor" />
+            <img src="./template-assets/guitar.png" width="40" alt="decor" />
           </div>
           <div className="decor sticker float-smooth pos-s4-3">
-            <img src="/template-assets/heart.png" width="40" alt="decor" />
+            <img src="./template-assets/heart.png" width="40" alt="decor" />
           </div>
           <div className="decor sticker drift pos-s4-4">
-            <img src="/template-assets/pink-scribble.png" width="40" alt="decor" />
+            <img src="./template-assets/pink-scribble.png" width="40" alt="decor" />
           </div>
           <div className="decor sticker rotate-slow pos-s4-5">
-            <img src="/template-assets/love-balloons.png" width="40" alt="decor" />
+            <img src="./template-assets/love-balloons.png" width="40" alt="decor" />
           </div>
           <div className="decor sticker float-slow pos-s4-6">
-            <img src="/template-assets/ribbon.png" width="40" alt="decor" />
+            <img src="./template-assets/ribbon.png" width="40" alt="decor" />
           </div>
 
           <h2 className="scene-header interactive-object">Our Song</h2>

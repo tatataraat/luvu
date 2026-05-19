@@ -450,7 +450,7 @@ html {
   right: -15px;
   width: 65px;
   height: 65px;
-  background-image: url('/template-assets/heart.png');
+  background-image: url('./template-assets/heart.png');
   background-size: contain;
   background-repeat: no-repeat;
   transform: rotate(-15deg);
