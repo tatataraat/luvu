@@ -605,7 +605,7 @@ function App() {
               alt="Full bouquet"
             />
             <div style={{ fontFamily: 'var(--handwriting-font)', fontSize: '2rem', color: 'white', marginTop: '20px', textShadow: '1px 1px 4px rgba(0,0,0,0.5)', animation: 'fadeIn 1s ease 0.6s both' }}>
-              for <span style={{ color: '#ffb6c1' }}>necayangku</span>
+              for <span style={{ color: 'pink' }}>necayangku</span>
             </div>
             <div style={{ fontFamily: 'var(--handwriting-font)', fontSize: '1.2rem', color: 'rgba(255,255,255,0.6)', marginTop: '12px', animation: 'fadeIn 1s ease 1.2s both' }}>
               tap to continue
